@@ -17,13 +17,11 @@ But how many people actually take the 5-10 minutes to research which type of was
 
 tl;dr: Waste is going through the roof, so trash needs to be sorted better. How can we use computer vision and natural language processing to come up with a user interactive web app to promote easier recycling? 
 
-Be sure to write what inspired you (What is the problem), what you learned (nlp - nltk functions, amit: , react.js and its value), how you built your project (how did we do this), and the challenges you faced (link front end to back end, building a more reliable set of synonyms and hoponyms, having our model identify many more types of objects). Format your story in Markdown.
+Be sure to write what inspired you (What is the problem), what you learned (nlp - nltk functions, amit: , react.js and its value), how you built your project (how did we do this), and the challenges you faced (link front end to back end, building a more reliable set of synonyms and hyponyms, having our model identify many more types of objects). Format your story in Markdown.
 
 ## What does our project do?
 
-In our web app, a user can upload an image of their trash. Our computer vision model, which we trained on a bunch of datasets identifies what the object is(amit add more). Then, our program maps the identified object to the specific bin classification it falls under. As some objects can be mapped to multiple bins, 
-
-
+In our web app, a user can upload an image of their trash. Our computer vision model, which we trained on a bunch of datasets identifies what the object is(amit add more). Then, our program maps the identified object to the specific bin classification it falls under, taking into account bin prioritization for objects falling under multiple categories (ex. red would rank higher than blue). As a fail-safe, the user can also manually type in their trash (our autospell check would ensure accuracy of input) and then it could be mapped to it's classification. Given that there are a ginormous number of words that can fall under each category, we used nltk as a part of nlp to generate a giant database of synonyms and hyponyms to accomodate a wider range of inputs. Then, our web app would display the correct bin that the user needs to drop their trash into.
 
 ## How did we do this?
 
