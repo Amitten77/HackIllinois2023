@@ -45,8 +45,11 @@ Example Output (correct as fruits like lemon belong in compost):
 We need to be able to look at a disposed item and tell which of the six categories it belongs in. We developed an Image Classification Model that can sort objects to an extent: such as whether it's a fruit or vegetable, cardboard or plastic, type of electronic, etc. Most interestingly, Germany's trash management system sorts glass into three further categories: green glass, brown glass, and clear (white) glass. So I created an Image Segmentation Model too that segments an image and uses it average RGB value to figure out it's proper color.
 
 
-Image Segmentation:
-![alt text](glassout/output.png)
+Before Image Segmentation:
+![alt text](TestImages/glass116.jpg)
+
+After Image Segmentation:
+![alt text](glassout/white1.png)
 
 
 ### Cloud Computing
