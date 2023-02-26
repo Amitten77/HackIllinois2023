@@ -21,7 +21,7 @@ Be sure to write what inspired you (What is the problem), what you learned (nlp 
 
 ## What does our project do?
 
-In our web app, a user can upload an image of their trash. Our computer vision model, which we trained on a bunch of datasets identifies what the (amit add more). 
+In our web app, a user can upload an image of their trash. Our computer vision model, which we trained on a bunch of datasets identifies what the object is(amit add more). Then, our program maps the identified object to the specific bin classification it falls under. As some objects can be mapped to multiple bins, 
 
 
 
