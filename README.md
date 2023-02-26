@@ -7,6 +7,16 @@ For HackIllinois2023, sw4th1, nzhan2, and Ameat77 created an Automated Trash Cla
 
 ## How did we do this?
 
+### Sources
+
+Kaggle Datasets Used:
+Trash: https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification
+
+Fruit: https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition
+
+Electronic: https://www.kaggle.com/datasets/dataclusterlabs/electronics-mouse-keyboard-image-dataset + my own dataset found through google images
+
+
 ### Computer Vision and Cloud Computing
 
 ### Natural Language Processing
