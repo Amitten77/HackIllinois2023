@@ -15,7 +15,7 @@ The world generates 2.01 billion tonnes of municipal solid waste annually, with 
 
 But how many people actually take the 5-10 minutes to research which type of waste their trash belongs into so we can manage waste better? That's where Germany, our inspiration, stepped in. In Germany, trash is strictly sorted into one of six bins: Blue (Paper and Cardboard), Yellow (Plastic and Soft Metal), Brown (Organic/Bio Waste), Black (Residual Waste), Red (Special Waste), and Glass (where glass is sorted into brown, white, or green glass). As the leading recycler of municipal waste, their comprehensive waste sorting system was something we digitally implemented so countries outside of Germany could easily follow the same model.
 
-#tl;dr: Waste is going through the roof, so trash needs to be sorted better. How can we use computer vision and natural language processing to come up with a user interactive web app to promote easier recycling? 
+# tl;dr: Waste is going through the roof, so trash needs to be sorted better. How can we use computer vision and natural language processing to come up with a user interactive web app to promote easier recycling? 
 
 ## What does our project do?
 
