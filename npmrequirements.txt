@@ -1,0 +1,4 @@
+npm install -g npm
+npm install react-switch
+npm install history
+npm install react-router-dom@5
