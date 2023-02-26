@@ -1,6 +1,11 @@
 # HackIllinois2023
 For HackIllinois2023, sw4th1, nzhan2, and Ameat77 created an Automated Trash Classifier.
 
+
+## What is the problem?
+
+
+
 ## What does our project do?
 
 
@@ -30,7 +35,9 @@ NLTK (Natural Language Toolkit) is a popular platform that works with language d
 #### Special Cases:
 One of our categories was glass, and in Germany, glass is categorized into green, brown, and white. Using webcolors, we converted given glass color into its rgb int values and cross-referenced these values to approximate which out of the three glass categories it would fit best in. Given that some objects could be present under multiple bins, we created an order of priority to properly sort these objects. And some objects, like paper, is a substring of many different trash items that fit into different bins (such as wax paper, toilet paper, paper towels, etc.). To overcome this issue, we prioritized the bin in which the inputted string exactly matched the data element. Furthermore, since some trash items could be contaminated with organic materials, we created a case where any object that was contaminated would automatically be sorted into residual waste. As a fail-safe in case the computer vision couldn't identify the object, we also created a functionality for the user to type their object. To account for misspellings, we also created an autocorrect function to correct user input. 
 
-### Front-End Development
+### Front-End Development (React.js, 3D-Modeling, and Flask)
+
+For our front-end, we created an interative web-app where users can enter pictures of their trash or a description of their trash, and the output will 
 
 
 
