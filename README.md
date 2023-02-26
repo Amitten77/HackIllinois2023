@@ -15,9 +15,7 @@ The world generates 2.01 billion tonnes of municipal solid waste annually, with 
 
 But how many people actually take the 5-10 minutes to research which type of waste their trash belongs into so we can manage waste better? That's where Germany, our inspiration, stepped in. In Germany, trash is strictly sorted into one of six bins: Blue (Paper and Cardboard), Yellow (Plastic and Soft Metal), Brown (Organic/Bio Waste), Black (Residual Waste), Red (Special Waste), and Glass (where glass is sorted into brown, white, or green glass). As the leading recycler of municipal waste, their comprehensive waste sorting system was something we digitally implemented so countries outside of Germany could easily follow the same model.
 
-tl;dr: Waste is going through the roof, so trash needs to be sorted better. How can we use computer vision and natural language processing to come up with a user interactive web app to promote easier recycling? 
-
-Be sure to write what inspired you (What is the problem), what you learned (nlp - nltk functions, amit: , react.js and its value), how you built your project (how did we do this), and the challenges you faced (link front end to back end, building a more reliable set of synonyms and hyponyms, having our model identify many more types of objects). Format your story in Markdown.
+#tl;dr: Waste is going through the roof, so trash needs to be sorted better. How can we use computer vision and natural language processing to come up with a user interactive web app to promote easier recycling? 
 
 ## What does our project do?
 
@@ -34,8 +32,29 @@ Fruit: https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-reco
 
 Electronic: https://www.kaggle.com/datasets/dataclusterlabs/electronics-mouse-keyboard-image-dataset + my own dataset found through google images
 
+Example Input:
+![alt text](TestImages/lemon.png)
 
-### Computer Vision and Cloud Computing
+
+Example Output (correct as fruits like lemon belong in compost):
+![alt text](readMEImages/sort.png)
+ 
+
+### Computer Vision
+
+We need to be able to look at a disposed item and tell which of the six categories it belongs in. We developed an Image Classification Model that can sort objects to an extent: such as whether it's a fruit or vegetable, cardboard or plastic, type of electronic, etc. Most interestingly, Germany's trash management system sorts glass into three further categories: green glass, brown glass, and clear (white) glass. So I created an Image Segmentation Model too that segments an image and uses it average RGB value to figure out it's proper color.
+
+
+Image Segmentation:
+![alt text](glassout/output.png)
+
+
+### Cloud Computing
+
+My computer didn't have enough storage for the sheer amount of training images to train the different models, so we ultilized AWS's S3 buckets to store and access our train, test, and validation data! This Cloud Computing solution ensured we could successfully train all the data we needed to given the time constraints of the Hackathon.
+
+![alt text](readMEImages/aws.png)
+
 
 ### Natural Language Processing
 
@@ -50,9 +69,9 @@ One of our categories was glass, and in Germany, glass is categorized into green
 
 ### Front-End Development (React.js, 3D-Modeling, and Flask)
 
-For our front-end, we created an interative web-app where users can enter pictures of their trash or a description of their trash, and the output will 
+For our front-end, we created an interative web-app where users can enter pictures of their trash or a description of their trash, and the output will be the respective bin it belongs too. While our backend code currently isn't linked to this front-end, we plan to learn Flask and implement it to accomplish this task.
 
-
+![alt text](readMEImages/webapp.png)
 
 ## How to recreate our project!
 
@@ -62,6 +81,7 @@ git clone https://github.com/Ameat77/HackIllinois2023.git
 ```
 pip install -r requirements.txt
 ```
+Follow the commands in npmrequirements.txt to install npm and its respective dependencies.
 ```
 npm start
 ```
